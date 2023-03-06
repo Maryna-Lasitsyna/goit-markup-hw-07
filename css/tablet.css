@@ -1,0 +1,122 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+
+.header-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header-link {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  transition: color var(--transition-dur-and-fun);
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+.current {
+  position: relative;
+  color: var(--pressed-color);
+}
+.current::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--pressed-color);
+}
+.address-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header-mailto {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  transition: color var(--transition-dur-and-fun);
+}
+.header-mailto:hover,
+.header-mailto:focus {
+  color: var(--pressed-color);
+}
+.header-tel {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  transition: color var(--transition-dur-and-fun);
+}
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--pressed-color);
+}
+
+
+
+/*=================== HERO =================== */
+
+ .hero-title{
+   width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 40px;
+ }
+
+  /*================== FEATURES ================== */
+
+  .feature-list {
+    gap: 24px;
+  }
+  .feature-item {
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 72px;
+  }
+
+  /*=================== ACTIONS ================= */
+
+  /* .action{
+ padding-top: 0px;
+    padding-bottom: 0px;
+}
+.action-container{
+   display: none;
+} */
+
+  /*============== TEAM =============== */
+
+  .team > container {
+    max-width: 552px;
+  }
+  .team-list {
+    gap: 24px;
+  }
+  .team-item {
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 64px;
+  }
+
+  /*================== CUSTOMERS ================= */
+
+  .customers-container {
+    max-width: 552px;
+  }
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+    height: 88px;
+    /* margin-bottom: 72px; */
+  }
+}

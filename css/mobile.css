@@ -1,0 +1,33 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 428px;
+  }
+
+
+  
+
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .feature-text {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .section.action {
+    display: none;
+  }
+  /* .action-container {
+    display: none;
+  } */
+
+  .team-container {
+    max-width: 296px;
+  }
+
+  .customers-item {
+    margin-bottom: 72px;
+  }
+}
