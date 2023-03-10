@@ -4,13 +4,14 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-
-  /*================== FEATURES ================== */
+  .header-address-list {
+    display: flex;
+    gap: 40px;
+  }
 
   .feature-item {
     width: calc((100% - 72px) / 4);
   }
-
   .feature-container-icon {
     background: var(--filter-btn-color);
     border-radius: 4px;
@@ -22,15 +23,11 @@
     margin-bottom: 8px;
   }
 
-  /*=================== ACTIONS ================= */
-
-  .section.action{
-   display: block;
+  .section.action {
+    display: block;
     padding-top: 120px;
     padding-bottom: 120px;
   }
-
- 
   .action-title {
     margin-bottom: 72px;
   }
@@ -42,25 +39,46 @@
     width: calc((100% - 48px) / 3);
   }
 
-  /*============== TEAM =============== */
-
   .team {
     padding-top: 120px;
     padding-bottom: 120px;
   }
 
-  .team-item {
+.team-item {
     width: calc((100% - 72px) / 4);
   }
 
   .customers-container {
     max-width: 1128px;
   }
-  .customers-list {
+.customers-list {
     gap: 24px;
   }
-  .customers-item {
+.customers-item {
     width: calc((100% - 120px) / 6);
     margin-bottom: 0;
   }
+
+
+  .footer .footer-container {
+  display: flex;
+  align-items: baseline;
 }
+
+.social-container {
+  display: block;
+  margin-left: 120px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
