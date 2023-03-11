@@ -141,8 +141,6 @@ img {
   background-size: cover;
 }
 
-  
-
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -155,9 +153,6 @@ img {
   }
 }
 
-
-
-
 .hero-title {
   max-width: 320px;
   margin-left: auto;
@@ -167,17 +162,8 @@ img {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-
-  /* margin-top: 0;
-  margin-bottom: 48px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 56px;
-  line-height: 1.07;
-  width: 496px;
-  letter-spacing: 0.02em;
-  color: var(--hero-title-color); */
 }
+
 .hero-button {
   font-family: inherit;
   font-weight: 500;
@@ -220,14 +206,21 @@ img {
 }
 .feature-item {
   width: 100%;
- }
+}
 
 .feature-container-icon {
   display: none;
 }
-
+.feature-subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+}
 .feature-text {
   margin-top: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /*============== TEAM =============== */
@@ -245,7 +238,6 @@ img {
   justify-content: center;
   align-items: center;
   gap: 72px;
-  
 }
 
 .team-item {
@@ -258,12 +250,19 @@ img {
 }
 
 .team-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
   text-align: center;
 }
 .team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
   text-align: center;
   margin-bottom: 8px;
 }
+
 .team-soc-list {
   display: flex;
   justify-content: center;
@@ -363,7 +362,6 @@ img {
 }
 .footer .footer-container {
   display: flex;
- 
 }
 
 .footer-logo {
@@ -430,7 +428,6 @@ img {
 .social-soc-link:is(:hover, :focus) {
   background-color: #31d0aa;
 }
-
 
 .subscribe-form {
   display: flex;
@@ -500,7 +497,7 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity var(--transition-dur-and-fun),
     visibility var(--transition-dur-and-fun);
-   overflow-y: auto;   
+  overflow-y: auto;
 }
 
 .modal {
@@ -516,7 +513,6 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 72px 24px 24px;
- 
 }
 
 .backdrop.is-hidden .modal {

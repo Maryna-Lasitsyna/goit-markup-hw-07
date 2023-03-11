@@ -57,11 +57,15 @@
     gap: 40px;
   }
 
+  .header-address-item{
+margin-bottom: 12px;
+  }
+
   .header-mailto {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    margin-bottom: 12px;
+    
     color: var(--primary-text-color);
     transition: color var(--transition-dur-and-fun);
   }
@@ -142,10 +146,11 @@
   .feature-item {
     width: calc((100% - 24px) / 2);
   }
-  .subtitle {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
+
+
+    .feature-text {
+    font-weight: 500;
+    font-size: 16px;
   }
 
   .action {
