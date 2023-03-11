@@ -8,6 +8,15 @@
     display: none;
   }
 
+  .header-page {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .header-logo {
+    margin-right: 120px;
+  }
+
   .header-list {
     display: flex;
     gap: 40px;
@@ -49,8 +58,10 @@
   }
 
   .header-mailto {
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
+    margin-bottom: 12px;
     color: var(--primary-text-color);
     transition: color var(--transition-dur-and-fun);
   }
@@ -59,7 +70,8 @@
     color: var(--pressed-color);
   }
   .header-tel {
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     transition: color var(--transition-dur-and-fun);
@@ -89,19 +101,51 @@
     }
   }
 
+  @media screen and (min-width: 768px) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-desk.jpg);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .hero {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url(../images/people-desk@2x.jpg);
+      }
+    }
+  }
+
   .hero-title {
     max-width: 496px;
     font-size: 56px;
     line-height: 1.07;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
+  }
+
+  .modal {
+    width: 408px;
   }
 
   .feature-list {
-    gap: 24px;
+    column-gap: 24px;
   }
   .feature-item {
     width: calc((100% - 24px) / 2);
-    margin-bottom: 72px;
+  }
+  .subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
   }
 
   .action {
@@ -114,18 +158,18 @@
   }
 
   .team-container {
-    max-width: 552px;
+    max-width: 584px;
   }
   .team-list {
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 64px;
   }
   .team-item {
     width: calc((100% - 24px) / 2);
-    margin-bottom: 64px;
   }
 
   .customers-container {
-    max-width: 552px;
+    max-width: 584px;
   }
 
   .customers-item {
@@ -151,7 +195,6 @@
   .social-container {
     min-width: 208px;
     margin-top: 0;
-    margin-left: 24px;
   }
 
   .footer-subscribe {

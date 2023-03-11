@@ -4,12 +4,22 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+
+ 
   .header-address-list {
     display: flex;
     gap: 40px;
   }
 
+  .header-mailto,
+  .header-tel {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
   .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -27,6 +37,20 @@
         ),
         url(../images/people-desk@2x.jpg);
     }
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+
+
+.section.features{
+  padding-top: 120px; 
+  padding-bottom: 0;
+}
+
+  .feature-list {
+    column-gap: 24px;
   }
 
   .feature-item {
@@ -64,12 +88,20 @@
     padding-bottom: 120px;
   }
 
+  .team-list {
+    row-gap: 0;
+  }
   .team-item {
     width: calc((100% - 72px) / 4);
   }
 
+
+  .customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
   .customers-container {
-    max-width: 1128px;
+    max-width: 1158px;
   }
   .customers-list {
     gap: 24px;
@@ -79,13 +111,26 @@
     margin-bottom: 0;
   }
 
+
+  .footer {
+   padding-top: 100px;
+  padding-bottom: 100px;
+}
   .footer .footer-container {
     display: flex;
     align-items: baseline;
+  }
+
+  .footer-subscribe {
+    margin: auto;
   }
 
   .social-container {
     display: block;
     margin-left: 120px;
   }
+}
+
+.subscribe-input {
+  min-width: 264px;
 }

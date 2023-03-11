@@ -91,7 +91,6 @@ img {
   border-bottom: 1px solid #e7e9fc;
   padding-top: 24px;
   padding-bottom: 24px;
-
   top: 0;
 }
 
@@ -115,8 +114,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
-  margin-right: 120px;
-  /* margin-right: 76px; */
 }
 .web {
   color: var(--accent-color);
@@ -144,6 +141,8 @@ img {
   background-size: cover;
 }
 
+  
+
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -155,6 +154,9 @@ img {
       url(../images/dark-bg-mob@2x.jpg);
   }
 }
+
+
+
 
 .hero-title {
   max-width: 320px;
@@ -218,9 +220,7 @@ img {
 }
 .feature-item {
   width: 100%;
-  margin-bottom: 72px;
-  /* width: calc((100% - 72px) / 4); */
-}
+ }
 
 .feature-container-icon {
   display: none;
@@ -245,6 +245,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 72px;
+  
 }
 
 .team-item {
@@ -323,7 +324,8 @@ img {
 .customers-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  column-gap: 16px;
+  row-gap: 72px;
 }
 .customers-item {
   width: calc((100% - 16px) / 2);
@@ -356,17 +358,12 @@ img {
 
 .footer {
   background: var(--title-text-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .footer .footer-container {
   display: flex;
-  align-items: baseline;
-}
-
-.social-container {
-  display: block;
-  margin-left: 120px;
+ 
 }
 
 .footer-logo {
@@ -434,9 +431,6 @@ img {
   background-color: #31d0aa;
 }
 
-.footer-subscribe {
-  margin: auto;
-}
 
 .subscribe-form {
   display: flex;
@@ -450,7 +444,7 @@ img {
 }
 
 .subscribe-input {
-  min-width: 264px;
+  width: 100%;
   height: 40px;
   padding: 8px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -506,6 +500,7 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity var(--transition-dur-and-fun),
     visibility var(--transition-dur-and-fun);
+   overflow-y: auto;   
 }
 
 .modal {
@@ -514,13 +509,14 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition-dur-and-fun);
-  width: 408px;
+  width: 392px;
   min-height: 576px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 72px 24px 24px;
+ 
 }
 
 .backdrop.is-hidden .modal {
