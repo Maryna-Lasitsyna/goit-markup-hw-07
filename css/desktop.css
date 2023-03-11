@@ -143,8 +143,17 @@
     display: block;
     margin-left: 120px;
   }
-}
 
-.subscribe-input {
-  min-width: 264px;
+  .subscribe-input {
+    min-width: 264px;
+  }
+
+  .filter {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .card-item {
+    width: calc((100% - 48px) / 3);
+  }
 }

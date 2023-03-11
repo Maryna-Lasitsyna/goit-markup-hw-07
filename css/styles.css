@@ -502,7 +502,7 @@ img {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition-dur-and-fun);
@@ -703,14 +703,23 @@ img {
 /*================== PORTFOLIO ================== */
 
 .filter {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  /* padding-top: 100px;
+  padding-bottom: 120px; */
 }
-.filter-list {
-  justify-content: center;
-  display: flex;
+/* .filter-list {
+    display: flex;
+    justify-content: center;
   gap: 24px;
   margin-bottom: 72px;
+} */
+
+.filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+  gap: 24px;
 }
 
 .filter-btn {
@@ -767,8 +776,12 @@ img {
   margin-bottom: 0;
   color: var(--primary-text-color);
 }
-.card-item {
+/* .card-item {
   width: calc((100% - 48px) / 3);
+} */
+
+.card-item {
+  width: 396px;
 }
 
 .card-link {
