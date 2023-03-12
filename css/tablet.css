@@ -73,6 +73,7 @@
   .header-mailto:focus {
     color: var(--pressed-color);
   }
+  
   .header-tel {
     font-size: 12px;
     line-height: 1.17;
